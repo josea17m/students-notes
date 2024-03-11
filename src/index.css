@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.layout{
+  min-height: 100dvh;
+}
+
+.background-image {
+  background-image: url("./j.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+td {
+  text-align: center;
+  padding: 0.5rem;
+  border-bottom: solid 1px black;
+}
+
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.inputfile + label {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.inputfile + label svg {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  fill: currentColor;
+}
+
+.texto {
+  transform: skew(-0.07turn);
+}
+
+.link-container:hover .file-bg {
+  color: rgb(94 234 212);
+}
+
+/* .modal {
+  display: none;
+  transition: opacity 1s ease-out;
+  opacity: 0;
+}
+.modalOn {
+  opacity: 1;
+  display: block;
+} */
+/*
+.inputfile-1:focus + label,
+.inputfile-1.has-focus + label,
+.inputfile-1 + label:hover {
+  background-color: #9f8465;
+} */
